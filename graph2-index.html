@@ -1,0 +1,562 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=graph-simple&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQOSVEC-ANEWMMFpCAUg0QIbQQBbHpBgARAK4AnYVGgBVEABNh-WACYADFsbo-gmTACiPAM4RoAcwXKwqygEdx5yAGMAktADy4sJR2wTHEkIHBMCAG0idFRiYjAATxA7C2kQAAs_KOIsHnjgHypoGBxM2PQTeIEAI1YAZQgAL1UARgBWf1jJYB4BAjBJcRwO7J4qnCxOLNiTNOAAdz6BnCnYbjLYHEULHFrKmonYcMoXCEkXXD9YSh5JLrnKAF1h9E3t3eq6xtVwjXpYVqeK1eOAAMqNxpN1ugAGYwMD1JoEDQrNZlFysYCSPCUSQWKo8AAUmjU9AAbO0ACwUgCUpTKNh4ERW0WZxGgPTsgDZTQCminSobBSAQALRtZ5leIEVqs1HrGL82DsgR2QD0poAvxT5UMFsFFrPQEv-0rFLPlCo5VEA_GmAetNAJRKgHa9QCpRoARWMAEP-AWjlAL9qgEh_wCQ5oAFNMANoqAD-UNestULWiTdbB9UK1BTDay5fzFXYrXbnYAD00AhKmewAcsYBkMz9QZDZTDpIAzEbiDHNMyZbEk1CU1RAOTWgEbgwCjaW6vUXg1X0GGAOy_KMxtp1o2N9bNq6AR9tAMzqgCA9QCRPoAiv0AuHKAMj1AM5ygC9AwDOioBGJ1dgGH9EuxMMADhHJpj5cNsETUZnlEA_nqAPd1F4B3W0AB86ALmVAFnrbdD39QApt0AWHNAEKlU9z2IK8b3lfVSQfZkpzKF9AD0XQBrjUAL-jADllQA2JUAe2De1ggdhQpBD-X1ct7yhetiDQ2IX0AdX9AHgbQByTSIwAg5UATMzAHo7Uj-wFYVSUvYSaOQ_kGMY58zSuQB2_UAeENAHX9QA3lMAGQjAAbTQACpUAQ3VADAlDSyJE2AhUHStRwIctkWkqsmLZeTKEMEE3FgVyQRBABNWBDAADQABU8AAlAAVWBagAQRMsNWnaKzYEohN-Qc9AXwAWUi4KfIAaUiny3AAOQAYRi4VhwkghmkHZKoVS00lSoAAJORCoAcVgTLCtgLyivcorRGi4Sy1JSrtTo-j7LkxqrhBTxYACyKcoiyL0s6wx0pCtxIpBfr0rcULDFEMqzMHCkxrUNRarKeqX0AYI1AFDFQA0TUAK8DADZHQAuuRO8MqKhfUAE5rpu6a7EewBVmw-wA0I0AEb9AHG_b64rG8ygdkk17qeiGYfh4bhVaUaErUKU7NQkGqEACBVAB15QBO00AUGVABujQA3RUAYO1AC_1QBFxMALHlvtJX71n1K7ibq0mrkABWNAANY77y3i29JRR1H5RfQAAVMAOlVADFVQBBlUl3nxSqonJqfNGnMAflNABy9QBTCMASqVJeaJHLzl40FacwAVzUADSMnRO7XYn5vX1hkh3kycwBnTUAcgNAFMFW0j0ATwzADu3IVAEygwBVuUAdP1AAlDQAQ1UAF-MLZjk61EHJHx0FoXDZmygQ_DqPY5ww9AGKDQBQAKznOcdgWikZ9so_cIEu7AAwAmuUAOoSaabqMtXLfGZdgGqi9lYXKEAAn_AE9NQBsJUALDlAELowAkJRjoV2w7QAcAkAOP9AF45QBouRXg_AF9ND7AHxXQBcAjA4eTVH6XEN1-2u8d0vAHJfQBSA0ACVjAB-DtvQAiqaAAp1BegBquMAJ3xJ1W4Ewmr7Ka3cqCADvdQAo6aAEAGQAlk6AEFbDBgBP9UALXRGDAAj0YABnlACS3mVHUE9YwC31ilWegAcxTUoAMBdABEsX6QAxLGAG-5YszdNBjVou_W6TkPSAFPdVWmkTrVSEXbaewNkFXA9IAL71AB90dI5uzRIwTwpAgjuSDP52EAJKKHFNEjyRGNCkUkGHFyMVQQA20ZSOMs3EUntqwED0SI2eHomEr3MU_YUzRxIJRst4pRlBAD6NoAeaDACA7u6QAommAEP5F23C-F9gsWZGhr8W7yNsTPCJWc2YnUogXfRsRO6iNLoAEBVYmLkAKXGgB15SzvXE6rR84JToeE-xVxqmAAZ1QA4ZqABUAwAU8rsw5hg_pgA9dMAKQh1o4ZlVaO4vUVVmjdIDqXD6gANFUAKVGgAbRIwWbQALLFUJxqSDptDtHrKbE5QA_EaAGkdDBajADgmtgx0ZVBwv2osKehiCDY9MoDHQA5kYuMyRWC65TiCVNnoAdGVAA1coAUetAD4CUMsmgBFz0AAFGQlMkRiEdc6cTlABQcl-QAmfmABZNZ0gAxtMAEdqnpACFAYAX7lsWBMSpZWhU98mKIBfCwA94qABUzAszL5RaipBdPJfzGERPhXCwAOHKADQ5QAVX5JMAPYGGLAD05kK_kIqvl_QILWBR6BATrAAPTGtgFgcwABrMIhwjVlAtdAa1TJJXyhMPkM4qYbQOhdB6H0AYMkmjADcbYFArjgyhgsqs0KTRuqkC4T16Zsx5kLP6kyQbcQ4FDZQcNWNYLRtde6-NVAFwrg3DuA8x4zzCXTSG8m1N6bM3GXmwx_JY0eqoB-b8_4gIgQgtBKtUYa2ZrrbTRmrNObNv-a2wtoNnrvS-tW4Nw6riU1HY2idUaW1QjbUWq4u9ux-v4YOpdWac2RvxWUHddhsL4WIpqqEQ7T0YwjdjC90wZ1UGUupbS-kjJppPVQO6z7c2bqnduj9Vx2JcT4oJVNi6M1Psxueg18tp1xrsC5NyHlvK-UCiFcKUV_0IcA8B5DnKGxRivVQTK2VYB5QKiVIjtaw2kdfSh_24H0PNVah1LqPU-quUKoNJjy7s2sZoOxj-aH22zXmotZaUU1rpQ2ltHae0DpHRE4hl9k6XXSd3ZQVdDbx1c3g8xyg4tdN2P07O16n0tNUEs6BvTnGZPZoekhtj8pH2OYls56zrmDNAc8w50Wfm33ECo1cU2ltQuUB5FZgpBauNhbiwl_zSWbNUBVhrNLvIMtcqy1cdLx7iNXDVCZCoHwsAIm-L8FuGg7X8hyGMA49VyizAWBgJYUZO7oAdTsBIuBIQmlgHMCAigwBpAIBc0bLgpAADccDQFCDajQAA6DQ7cJXyhwAIdIpgIA2va7AWE82bWUAddaiT8o-uwD0EIEQ0BRDjFyAQaE4hoAuCe7AAkE3SDUik_KSQmapBwH-7AAAVNqLQABuXrEXygQcBdHdmeXEuFcCyqdUZnROP3I6hrHVAKu46zeXCOh5t6J1TpnbO0cMcUZjcjknpXzPk8rkKau9dG704K4z5LbmWeBoA1cPug98c7cy0T8rOPWeicXqvTe29d6H1PufK-d8H688RwEZnsvhdlcoL_QBIDwHQIZ4T9YUXKBC-8yLyg6DsF4KIaQyhFuONW713F127s-eW8vcjlhHC0lHoN-Zn37y_ce4DylygEjnHe7dpHnX1vVEaNBWH0TEf3dA897H3x_iM928N9nqPueY9udMQE4v4ek85_qtbpx1f-Q-auKXlPyOYnxOSak30vDQ816z3XsvDfkft8z1mkrknR-x_Z5TqutcG507i0U-vlHkdz6p8ndOPOV8W2KSP9fsfV-k6oLUhpzSLatMP0z2PYuh7a4n1QeFyLUWYvvRUrdee3P34lw--3_SwyYynMkyfSsy8yXmkumO3-Bmv-j-g-WaxK5KVKtKjKH-UKX-FeBmCu68W8scKux8Z8l8N898oEf-6wrelAgBoy4yoB4BZGUB_ORWRu_8QCscYCkCMCp-vSgyNBIB0ycyDBBiYGMBdgxubBQoHB5u3BlA0q8qSqqqGqcGHese4hpunBcWvKAqKaA-jB_u76s-YcFOW-NOu-MhDyTyryWCye0-R-bmm-C-3Oy-5hjyLybya-t-P-A8D-cWFhbh1hHhAuBmDhnOi-ZhcuWa2y-yhyJygRzBcBcWURByxypyKhbmWhgqyhT-VwwKReeh0eBh6RcKsqiqKq6q6BsQlBuRcR0ushiKKK6KWKWRCBVA1RfuTWxAe2B2Zgx2rIZ24gF2gQwQoQN2n-KwD2Bgz2r2-oH2X2P2f2igAO5e6AIOYAYOsAEO0O14AA1JoBoPDnoQNrUENqoA5MCO8PsBEMcKcOcCUH8NcLcPMI8FWOcXsJ8IiIcPVgCFWKADwCcAkEiOtv9FWONpNtNi3FWOiFgJiNiLiPiESNYvQMEiSM0KSOdM0LSJCYtstqtoCb8lClkKiICLQLDkAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-graph-modularity/2/files/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: ''
+  },
+  tooltip: {},
+  animationDurationUpdate: 2000,
+  animationEasingUpdate: 'quinticInOut',
+  series: [
+    {
+      type: 'graph',
+      layout: 'none',
+      symbolSize: 15,
+      roam: true,
+      label: {
+        show: true
+      },
+      edgeSymbol: ['circle', 'arrow'],
+      edgeSymbolSize: [0, 5],
+      edgeLabel: {
+        fontSize: 0
+      },
+      color:'rgba(202,65,44)',
+      data: [
+        {
+          name: '收入',
+          x: -15,
+          y: 5
+        },
+        {
+          name: '支出',
+          x: 15,
+          y: 5
+        },
+        {
+          name: '阿斯利康投资（中国）有限公司',
+          x: -52,
+          y: -24
+        },
+        {
+          name: '阿斯利康（无锡）贸易有限公司',
+          x: -63,
+          y: -20
+       },
+       {
+          name: '欧莱雅（中国）有限公司',
+          x: -70,
+          y: -15
+       },
+       {
+          name: '深圳市粉红丝带乳腺关爱中心',
+          x: -80,
+          y: -3
+        }, 
+        {
+          name: '广州市海珠区母乳爱公益服务中心',
+          x: -80,
+          y: 6
+        }, 
+       {
+          name: '瑞士诺华制药有限公司',
+          x: -40,
+          y: 33
+       },
+       {
+          name: '罗氏大药厂香港有限公司',
+          x: -68,
+          y: 36
+        },
+        {
+          name: '德意志银行新加坡分行',
+          x: -73,
+          y: 30
+        },
+        {
+          name: 'ELI LILLY EXPORT SA',
+          x: -55,
+          y: 40
+        },
+        {
+          name: 'MARY KAY INC',
+          x: -70,
+          y: 17
+        },
+        {
+          name: 'HUNG MAN YIN LINDA',
+          x: -66,
+          y: 13
+        },
+        {
+          name: 'LO PAK SAM MEMORIAL LIMITED',
+          x: -74,
+          y: 22
+        },
+       {
+          name: '境内外自然人',
+          x: -50,
+          y: 9
+        },
+        {
+          name: '境内法人或组织',
+          x: -55,
+          y: -7
+        },
+       {
+          name: '境外法人或组织',
+          x: -56,
+          y: 25
+        },
+       {
+          name: '合作方包括其它基金会',
+          x: -60,
+          y: 2
+        },
+       {
+          name: '捐赠',
+          x: -35,
+          y: 5
+        },
+        {
+          name: '销售商品',
+          x: -30,
+          y: 15
+        },
+        {
+          name: '政府补助',
+          x: -31,
+          y: -8
+        },
+        {
+          name: '委托投资',
+          x: 0,
+          y: 25
+        },
+        {
+          name: '女性健康关爱项目-芙仕得慈善援助项目',
+          x: 27,
+          y: -15
+        },
+        {
+          name: '女性健康关爱项目-诺爱患者援助项目',
+          x: 33,
+          y: -5
+        },
+        {
+          name: '母亲邮包项目',
+          x: 36,
+          y: 7
+        },
+        {
+          name: '＠她创业计划项目-欧莱雅“美丽事业美好人生”公益项目',
+          x: 35,
+          y: 15
+        },
+        {
+          name: '紧急赈灾项目-救在她身边',
+          x: 33,
+          y: 23
+        },
+        {
+          name: '差旅、物流、培训、评估等',
+          x:15,
+          y: -22
+        },
+        {
+          name: '农银理财有限责任公司',
+          x: 20,
+          y: 33
+        },
+        {
+          name: '中国工商银行',
+          x: 17,
+          y: 38
+        },
+        {
+          name: '中国建设银行',
+          x: 12,
+          y: 43
+        },
+        {
+          name: '光大银行',
+          x: 0,
+          y: 46
+        },
+        {
+          name: '招商银行',
+          x: -10,
+          y: 43
+        },
+        {
+          name: '中国农业银行',
+          x: -18,
+          y: 30
+        },
+        {
+          name: '江苏省国际信托有限责任公司',
+          x: -15,
+          y: 38
+        },
+        {
+          name: '援助金',
+          x: 40,
+          y: -13
+        },
+        {
+          name: '各省市接受援助患者',
+          x: 57,
+          y: -22
+        },
+        {
+          name: '各地妇联及基金会、各地非营利组织',
+          x:50,
+          y: 11
+        },
+        {
+          name: '人员报酬、补贴等',
+          x:67,
+          y: -12
+        },
+        {
+          name: '房屋、设备、物资',
+          x:75,
+          y: -2
+        },
+        {
+          name: '项目执行',
+          x: 63,
+          y: 23
+        },
+        {
+          name: '北京毅速联合科技有限公司',
+          x: 52,
+          y: 3
+        },
+        {
+          name: '上海龙头（集团）股份有限公司',
+          x: 43,
+          y: -7
+        },
+        {
+          name: '北京凯晔贸易有限公司',
+          x: 44,
+          y: 28
+        },
+        {
+          name: '北京京东世纪信息技术有限公司',
+          x: 45,
+          y: 20
+        },
+      ],
+      // links: [],
+      links: [
+        {
+          source: '阿斯利康投资（中国）有限公司',
+          target: '境内法人或组织',
+        },
+        {
+          source: '阿斯利康（无锡）贸易有限公司',
+          target: '境内法人或组织',
+        },
+        {
+          source: '深圳市粉红丝带乳腺关爱中心',
+          target: '合作方包括其它基金会',
+        },
+        {
+          source: '广州市海珠区母乳爱公益服务中心',
+          target: '合作方包括其它基金会',
+        },
+        {
+          source: '境内外自然人',
+          target: '合作方包括其它基金会',
+        },
+        {
+          source: '欧莱雅（中国）有限公司',
+          target: '境内法人或组织',
+        },
+        {
+          source: '瑞士诺华制药有限公司',
+          target: '境外法人或组织',
+        },
+        {
+          source: '德意志银行新加坡分行',
+          target: '境外法人或组织',
+        },
+        {
+          source: '罗氏大药厂香港有限公司',
+          target: '境外法人或组织',
+        },
+        {
+          source: 'ELI LILLY EXPORT SA',
+          target: '境外法人或组织',
+        },
+        {
+          source: 'MARY KAY INC',
+          target: '境外法人或组织',
+        },
+        {
+          source: 'HUNG MAN YIN LINDA',
+          target: '境外法人或组织'
+        },
+        {
+          source: 'LO PAK SAM MEMORIAL LIMITED',
+          target: '境外法人或组织',
+        },
+        {
+          source: '合作方包括其它基金会',
+          target: '捐赠',
+        },
+        {
+          source: '境内外自然人',
+          target: '捐赠',
+        },
+        {
+          source: '境内法人或组织',
+          target: '捐赠',
+        },
+        {
+          source: '境外法人或组织',
+          target: '捐赠',
+        },
+        {
+          source: '政府补助',
+          target: '收入',
+        },
+        {
+          source: '捐赠',
+          target: '收入',
+        },
+        {
+          source: '销售商品',
+          target: '收入',
+        },
+        {
+          source: '收入',
+          target: '支出',
+          symbolSize: [0, 30],
+          label: {
+            show: true
+          },
+          lineStyle: {
+            width: 7,
+            curveness: 0.05
+          },
+          emphasis: {
+            focus: 'links'
+          },
+          animationDelay: function (idx) {
+            return idx * 100;
+          }
+        },
+        {
+          source: '项目基金',
+          target: '收入',
+        },
+        {
+          source: '支出',
+          target: '项目',
+        },
+        {
+          source: '支出',
+          target: '女性健康关爱项目-芙仕得慈善援助项目',
+        },
+        {
+          source: '支出',
+          target: '女性健康关爱项目-诺爱患者援助项目',
+        },
+        {
+          source: '支出',
+          target: '母亲邮包项目',
+        },
+        {
+          source: '支出',
+          target: '＠她创业计划项目-欧莱雅“美丽事业美好人生”公益项目',
+        },
+        {
+          source: '支出',
+          target: '紧急赈灾项目-救在她身边',
+        },
+        {
+          source: '支出',
+          target: '差旅、物流、培训、评估等',
+        },
+        {
+          source: '支出',
+          target: '委托投资',
+        },
+        {
+          source: '农银理财有限责任公司',
+          target: '委托投资',
+        },
+        {
+          source: '中国工商银行',
+          target: '委托投资',
+        },
+        {
+          source: '中国建设银行',
+          target: '委托投资',
+        },
+        {
+          source: '中国农业银行',
+          target: '委托投资',
+        },
+        {
+          source: '光大银行',
+          target: '委托投资',
+        },
+        {
+          source: '招商银行',
+          target: '委托投资',
+        },
+        {
+          source: '江苏省国际信托有限责任公司',
+          target: '委托投资',
+        },
+        {
+          source: '委托投资',
+          target: '收入',
+        },
+        {
+          source: '女性健康关爱项目-诺爱患者援助项目',
+          target: '援助金',
+        },
+        {
+          source: '女性健康关爱项目-芙仕得慈善援助项目',
+          target: '援助金',
+        },
+        {
+          source: '援助金',
+          target: '各省市接受援助患者',
+        },
+        {
+          source: '母亲邮包项目',
+          target: '北京毅速联合科技有限公司',
+        },
+        {
+          source: '母亲邮包项目',
+          target: '各地妇联及基金会、各地非营利组织',
+        },
+        {
+          source: '母亲邮包项目',
+          target: '上海龙头（集团）股份有限公司',
+        },
+        {
+          source: '＠她创业计划项目-欧莱雅“美丽事业美好人生”公益项目',
+          target: '各地妇联及基金会、各地非营利组织',
+        },
+        {
+          source: '紧急赈灾项目-救在她身边',
+          target: '各地妇联及基金会、各地非营利组织',
+        },
+        {
+          source: '紧急赈灾项目-救在她身边',
+          target: '北京京东世纪信息技术有限公司',
+        },
+        {
+          source: '紧急赈灾项目-救在她身边',
+          target: '北京凯晔贸易有限公司',
+        },
+        {
+          source: '女性健康关爱项目-芙仕得慈善援助项目',
+          target: '房屋、设备、物资',
+        },
+        {
+          source: '女性健康关爱项目-诺爱患者援助项目',
+          target: '房屋、设备、物资',
+        },
+        {
+          source: '母亲邮包项目',
+          target: '房屋、设备、物资',
+        },
+        {
+          source: '女性健康关爱项目-诺爱患者援助项目',
+          target: '人员报酬、补贴等',
+        },
+        {
+          source: '母亲邮包项目',
+          target: '人员报酬、补贴等',
+        },
+        {
+          source: '北京凯晔贸易有限公司',
+          target: '项目执行',
+        },
+        {
+          source: '北京京东世纪信息技术有限公司',
+          target: '项目执行',
+        },
+        {
+          source: '北京毅速联合科技有限公司',
+          target: '项目执行',
+        },
+      ],
+      emphasis: {
+        focus: 'series'
+      },
+      animationDelay: function (idx) {
+        return idx * 80+200;
+      },
+      lineStyle: {
+        edgeSymbol: ['circle', 'arrow'],
+        edgeSymbolSize: [0, 5],
+        opacity: 0.9,
+        width: 3,
+        color:'rgba(246,182,164,1)',
+        curveness: 0.2
+      }
+    },
+  ],
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
